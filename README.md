@@ -15,3 +15,7 @@ symfony server:start
 ```
 
 The website should start on localhost:8000, however you can check the port in the Terminal where you started the server.
+
+### Website interface:
+
+![Website interface](https://i.ibb.co/p3skmpg/calculator.png)
