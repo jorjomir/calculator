@@ -18,7 +18,8 @@ class CalculatorService
             $calculation_result = $this->multiplicationFunction($first_number, $second_number);
 
         } elseif ($calculation_type == CalculationTypesEnum::DIVISION_CALCULATION_KEY) {
-            $calculation_result = $this->divisionFunction($first_number, $second_number);
+            // stop users from dividing by zero which causes error
+            $calculation_result = ($second_number != 0) ? $this->divisionFunction($first_number, $second_number) : 0;
 
         } else {
             $calculation_result = 0;

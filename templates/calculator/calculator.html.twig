@@ -34,7 +34,7 @@
         <input type="submit" class="submit-btn" value="Calculate">
     </form>
 
-    {% if calculation_result %}
+    {% if calculation_result is not empty %}
         <h3>Calculation result: <strong>{{ calculation_result }}</strong></h3>
     {% endif %}
 
